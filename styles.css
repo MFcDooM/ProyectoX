@@ -1,63 +1,14 @@
-/* Reset de estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Resto de estilos... */
 
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #FFA500; /* Color naranja */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.header-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-nav ul {
-    list-style-type: none;
-    background-color: #333;
+/* Estilos específicos para el carrusel */
+#carousel-container {
+    position: relative;
     overflow: hidden;
 }
 
-nav li {
-    float: left;
-    margin: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Estilos específicos */
-.destacados {
-    margin-bottom: 20px;
-    overflow: hidden;
+#carousel {
+    display: flex;
+    transition: transform 0.5s;
 }
 
 .destacado {
@@ -67,56 +18,29 @@ footer {
     margin: 10px;
     flex-basis: calc(33.33% - 20px);
     box-sizing: border-box;
-    animation: destacadoAnimacion 5s ease-in-out infinite alternate;
+    transition: transform 0.5s;
+    min-height: 150px;
 }
 
-@keyframes destacadoAnimacion {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.05);
-    }
+#navigation {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.destacado h2 {
-    font-size: 24px;
-    margin: 0;
-    color: #FFA500; /* Color naranja */
+#prevBtn,
+#nextBtn {
+    background-color: #FFA500; /* Botones naranja */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-#carousel {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #FF8C00; /* Cambio de color al pasar el mouse */
 }
 
-#updates {
-    list-style: none;
-    padding: 0;
-}
-
-#updates li {
-    margin: 5px 0;
-}
-
-.reproductor {
-    /* Estilos para el reproductor de música */
-}
-
-.top-canciones {
-    background-color: #fff; /* Fondo blanco */
-    border: 1px solid #FFA500; /* Borde naranja */
-    color: #FFA500; /* Texto naranja */
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.top-canciones ul {
-    list-style: none;
-    padding: 0;
-}
-
-.top-canciones li {
-    margin: 5px 0;
-}
+/* Resto de estilos... */
