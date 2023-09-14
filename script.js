@@ -1,16 +1,46 @@
-// script.js
+/* Resto de estilos... */
 
-function updateHora() {
-    const horaElement = document.getElementById("hora");
-    const ahora = new Date();
-    const hora = ahora.getHours();
-    const minutos = ahora.getMinutes();
-    const segundos = ahora.getSeconds();
-    horaElement.textContent = `${hora}:${minutos}:${segundos}`;
+/* Estilos específicos para el carrusel */
+#carousel-container {
+    position: relative;
+    overflow: hidden;
 }
 
-// Actualizar la hora cada segundo
-setInterval(updateHora, 1000);
+#carousel {
+    display: flex;
+    transition: transform 0.5s;
+}
 
-// Inicializar la hora al cargar la página
-updateHora();
+.destacado {
+    background-color: #fff;
+    border: 1px solid #FFA500; /* Borde naranja */
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    min-height: 150px;
+}
+
+#navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#prevBtn,
+#nextBtn {
+    background-color: #FFA500; /* Botones naranja */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #FF8C00; /* Cambio de color al pasar el mouse */
+}
+
+/* Resto de estilos... */
