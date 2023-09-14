@@ -12,10 +12,15 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #FFA500; /* Color naranja */
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 nav ul {
@@ -52,23 +57,38 @@ footer {
 /* Estilos específicos */
 .destacados {
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .destacado {
-    background-color: #fff;
+    background-color: #FFA500; /* Color naranja */
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px;
     flex-basis: calc(33.33% - 20px);
     box-sizing: border-box;
+    animation: destacadoAnimacion 5s ease-in-out infinite alternate;
+}
+
+@keyframes destacadoAnimacion {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
 
 .destacado h2 {
     font-size: 24px;
     margin: 0;
+    color: #fff;
+}
+
+#carousel {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #updates {
@@ -84,3 +104,18 @@ footer {
     /* Estilos para el reproductor de música */
 }
 
+.top-canciones {
+    background-color: #FFA500; /* Color naranja */
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.top-canciones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.top-canciones li {
+    margin: 5px 0;
+}
