@@ -52,8 +52,35 @@ footer {
 /* Estilos específicos */
 .destacados {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.destacado {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.destacado h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#updates {
+    list-style: none;
+    padding: 0;
+}
+
+#updates li {
+    margin: 5px 0;
 }
 
 .reproductor {
     /* Estilos para el reproductor de música */
 }
+
