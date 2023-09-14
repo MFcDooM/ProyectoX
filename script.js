@@ -1,46 +1,31 @@
-/* Resto de estilos... */
+// script.js
 
-/* Estilos específicos para el carrusel */
-#carousel-container {
-    position: relative;
-    overflow: hidden;
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    const slides = document.querySelectorAll('.destacado');
+    if (slides.length === 0) return;
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.transform = 'translateX(100%)';
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.transform = 'translateX(0%)';
+    setTimeout(showSlides, 5000); // Cambia la imagen cada 5 segundos
 }
 
-#carousel {
-    display: flex;
-    transition: transform 0.5s;
+function nextSlide() {
+    slideIndex++;
+    showSlides();
 }
 
-.destacado {
-    background-color: #fff;
-    border: 1px solid #FFA500; /* Borde naranja */
-    padding: 20px;
-    margin: 10px;
-    flex-basis: calc(33.33% - 20px);
-    box-sizing: border-box;
-    transition: transform 0.5s;
-    min-height: 150px;
+function prevSlide() {
+    slideIndex--;
+    showSlides();
 }
-
-#navigation {
-    text-align: center;
-    margin-top: 10px;
-}
-
-#prevBtn,
-#nextBtn {
-    background-color: #FFA500; /* Botones naranja */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-#prevBtn:hover,
-#nextBtn:hover {
-    background-color: #FF8C00; /* Cambio de color al pasar el mouse */
-}
-
-/* Resto de estilos... */
