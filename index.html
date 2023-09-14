@@ -8,8 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>Radio de Música Online</h1>
-        <p>Tu fuente de música en línea</p>
+        <div class="header-content">
+            <h1>Radio de Música Online</h1>
+            <p>Tu fuente de música en línea</p>
+        </div>
     </header>
     
     <nav>
@@ -24,31 +26,28 @@
     <main>
         <section class="destacados">
             <h2>Programación Destacada</h2>
-            <!-- Aquí puedes agregar detalles sobre los programas destacados -->
+            <div id="carousel">
+                <!-- Los cuadros destacados se agregarán dinámicamente aquí -->
+            </div>
         </section>
         
         <section class="reproductor">
             <h2>Reproductor de Música</h2>
-            <!-- Aquí puedes agregar el reproductor de música o un enlace para escuchar la radio en vivo -->
+            <!-- Agrega aquí el reproductor de música o un enlace para escuchar la radio en vivo -->
         </section>
-        
-        <section id="destacados">
-            <div class="destacado" id="horaActual">
-                <h2>Hora Actual</h2>
-                <p id="hora"></p>
-            </div>
-            <div class="destacado">
-                <h2>By Arley</h2>
-                <p>Escucha la mejor música seleccionada por el TOP</p>
-            </div>
-            <div class="destacado">
-                <h2>New Updates</h2>
-                <ul id="updates">
-                    <li>¡Nuevas canciones agregadas!</li>
-                    <li>Programación actualizada.</li>
-                    <li>Eventos próximos.</li>
-                </ul>
-            </div>
+
+        <section class="top-canciones">
+            <h2>Top Old School HIPHOP</h2>
+            <ul>
+                <!-- Aquí puedes agregar la lista de canciones de Snoop Dog y otras -->
+                <li>Snoop Dog - Canción 1</li>
+                <li>Snoop Dog - Canción 2</li>
+                <li>Snoop Dog - Canción 3</li>
+                <li>Snoop Dog - Canción 4</li>
+                <li>Snoop Dog - Canción 5</li>
+                <li>Snoop Dog - Canción 6</li>
+                <!-- Agrega más canciones si es necesario -->
+            </ul>
         </section>
     </main>
     
@@ -59,4 +58,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
