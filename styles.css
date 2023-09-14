@@ -61,8 +61,8 @@ footer {
 }
 
 .destacado {
-    background-color: #FFA500; /* Color naranja */
-    border: 1px solid #ddd;
+    background-color: #fff;
+    border: 1px solid #FFA500; /* Borde naranja */
     padding: 20px;
     margin: 10px;
     flex-basis: calc(33.33% - 20px);
@@ -82,7 +82,7 @@ footer {
 .destacado h2 {
     font-size: 24px;
     margin: 0;
-    color: #fff;
+    color: #FFA500; /* Color naranja */
 }
 
 #carousel {
@@ -105,8 +105,9 @@ footer {
 }
 
 .top-canciones {
-    background-color: #FFA500; /* Color naranja */
-    color: #fff;
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #FFA500; /* Borde naranja */
+    color: #FFA500; /* Texto naranja */
     padding: 20px;
     margin-top: 20px;
 }
